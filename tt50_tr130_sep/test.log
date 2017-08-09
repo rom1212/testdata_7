@@ -1,0 +1,1308 @@
+('FLAGS:', Namespace(data_dir='test_training_size_100/', type='all'), ', unparsed:', [])
+####################### test mnist_softmax.py #######################
+################## iter: 0 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.705882
+accuracy_value: 0.705882
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 1 1 0 0 1 1 0 1 1 1 1 1 1 1 1]
+prediction sum(result): 12
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.75 ,  9 / 12
+accuracy: 0.705882370472, precision: 0.75
+################## iter: 1 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.647059
+accuracy_value: 0.647059
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [1 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1]
+prediction sum(result): 15
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  10 / 15
+accuracy: 0.647058844566, precision: 0.666666666667
+################## iter: 2 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.647059
+accuracy_value: 0.647059
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [1 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1]
+prediction sum(result): 15
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  10 / 15
+accuracy: 0.647058844566, precision: 0.666666666667
+################## iter: 3 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.470588
+accuracy_value: 0.470588
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 0 0 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 8
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.625 ,  5 / 8
+accuracy: 0.470588237047, precision: 0.625
+################## iter: 4 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.764706
+accuracy_value: 0.764706
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 1]
+prediction sum(result): 13
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.769230769231 ,  10 / 13
+accuracy: 0.764705896378, precision: 0.769230769231
+################## iter: 5 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.529412
+accuracy_value: 0.529412
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 1 0 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 9
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  6 / 9
+accuracy: 0.529411792755, precision: 0.666666666667
+################## iter: 6 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.705882
+accuracy_value: 0.705882
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [1 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 1]
+prediction sum(result): 14
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.714285714286 ,  10 / 14
+accuracy: 0.705882370472, precision: 0.714285714286
+################## iter: 7 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.529412
+accuracy_value: 0.529412
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 1 0 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 9
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  6 / 9
+accuracy: 0.529411792755, precision: 0.666666666667
+################## iter: 8 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.529412
+accuracy_value: 0.529412
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 1 0 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 9
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  6 / 9
+accuracy: 0.529411792755, precision: 0.666666666667
+################## iter: 9 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.588235
+accuracy_value: 0.588235
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 1 1 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 10
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.7 ,  7 / 10
+accuracy: 0.588235318661, precision: 0.7
+################## iter: 10 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.647059
+accuracy_value: 0.647059
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [1 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1]
+prediction sum(result): 15
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  10 / 15
+accuracy: 0.647058844566, precision: 0.666666666667
+################## iter: 11 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.588235
+accuracy_value: 0.588235
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 1 1 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 10
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.7 ,  7 / 10
+accuracy: 0.588235318661, precision: 0.7
+################## iter: 12 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.764706
+accuracy_value: 0.764706
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 1 1 1 0 1 1 0 1 1 1 1 1 1 1 1]
+prediction sum(result): 13
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.769230769231 ,  10 / 13
+accuracy: 0.764705896378, precision: 0.769230769231
+################## iter: 13 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.647059
+accuracy_value: 0.647059
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [1 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1]
+prediction sum(result): 15
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  10 / 15
+accuracy: 0.647058844566, precision: 0.666666666667
+################## iter: 14 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.705882
+accuracy_value: 0.705882
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 1 1 1 0 1 1 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 12
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.75 ,  9 / 12
+accuracy: 0.705882370472, precision: 0.75
+################## iter: 15 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.411765
+accuracy_value: 0.411765
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 0 0 0 1 1 0 1 1 1 0 1]
+prediction sum(result): 7
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.571428571429 ,  4 / 7
+accuracy: 0.411764711142, precision: 0.571428571429
+################## iter: 16 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.470588
+accuracy_value: 0.470588
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 0 1 0 0 0 0 0 1 1 0 1 1 1 1 1]
+prediction sum(result): 8
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.625 ,  5 / 8
+accuracy: 0.470588237047, precision: 0.625
+################## iter: 17 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.705882
+accuracy_value: 0.705882
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [0 0 1 1 0 0 1 1 0 1 1 1 1 1 1 1 1]
+prediction sum(result): 12
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.75 ,  9 / 12
+accuracy: 0.705882370472, precision: 0.75
+################## iter: 18 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.647059
+accuracy_value: 0.647059
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [1 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1]
+prediction sum(result): 15
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  10 / 15
+accuracy: 0.647058844566, precision: 0.666666666667
+################## iter: 19 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+0.647059
+accuracy_value: 0.647059
+prediction result.shape: (17,)
+prediction type result: <type 'numpy.ndarray'>
+prediction result[0-5]: [1 0 1 1 1 0 1 1 1 1 1 1 1 1 1 1 1]
+prediction sum(result): 15
+mnist.test.labels.shape (17, 10)
+type mnist.test.labels <type 'numpy.ndarray'>
+mnist.test.labels [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.]
+ [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.]]
+sum(mnist.test.labels[:,0]) 6.0
+sum(mnist.test.labels[:,1]) 11.0
+precision =  0.666666666667 ,  10 / 15
+accuracy: 0.647058844566, precision: 0.666666666667
+('accu_list:', [0.70588237, 0.64705884, 0.64705884, 0.47058824, 0.7647059, 0.52941179, 0.70588237, 0.52941179, 0.52941179, 0.58823532, 0.64705884, 0.58823532, 0.7647059, 0.64705884, 0.70588237, 0.41176471, 0.47058824, 0.70588237, 0.64705884, 0.64705884])
+('prec_list:', [0.75, 0.6666666666666666, 0.6666666666666666, 0.625, 0.7692307692307693, 0.6666666666666666, 0.7142857142857143, 0.6666666666666666, 0.6666666666666666, 0.7, 0.6666666666666666, 0.7, 0.7692307692307693, 0.6666666666666666, 0.75, 0.5714285714285714, 0.625, 0.75, 0.6666666666666666, 0.6666666666666666])
+('average accuracy :', 0.61764707714319234)
+('average precision:', 0.6862087912087912)
+####################### test mnist_deep.py #######################
+################## iter: 0 #################
+train_file: test_training_size_100/train.csv.gz
+test_file: test_training_size_100/test.csv.gz
+======== read_csv file: test_training_size_100/train.csv.gz
+csv.dtype: float64 , csv.shape: (131, 7)
+labels: [0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 1 1 0 1 0 0 2 1 1 0 1 1 1 1 0 0 0 0 0 0 1 0
+ 0 1 0 0 1 1 1 0 0 2 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 0 0 2 1 0 2 0 1 1 1 1
+ 1 0 1 1 0 0 2 0 0 1 1 1 2 1 1 0 0 0 0 1 2 1 2 1 1 1 0] , np.sum(labels): 64
+num_samples: 101
+before reshape:
+	images.ndim: 1 , images.shape: (19796,)
+	labels.ndim: 1 , labels.shape: (101,)
+after reshape:
+	images.ndim: 2 , images.shape: (101, 196)
+	labels.ndim: 2 , labels.shape: (101, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (101, 784)
+	labels.ndim: 2 , labels.shape: (101, 1)
+======== read_csv file: test_training_size_100/test.csv.gz
+csv.dtype: float64 , csv.shape: (51, 7)
+labels: [0 1 1 1 2 2 2 1 0 1 1 0 1 1 1 0 0 2 1 1 0] , np.sum(labels): 19
+num_samples: 21
+before reshape:
+	images.ndim: 1 , images.shape: (4116,)
+	labels.ndim: 1 , labels.shape: (21,)
+after reshape:
+	images.ndim: 2 , images.shape: (21, 196)
+	labels.ndim: 2 , labels.shape: (21, 1)
+after duplication:
+	images.ndim: 2 , images.shape: (21, 784)
+	labels.ndim: 2 , labels.shape: (21, 1)
+fileter_data: , images.shape: (101, 784) , labels.shape: (101, 10)
+fileter_data: , images.shape: (0, 784) , labels.shape: (0, 10)
+fileter_data: , images.shape: (21, 784) , labels.shape: (21, 10)
+minglog data = mnist.train.images
+minglog type(data) <type 'numpy.ndarray'>
+minglog data.shape (93, 784)
+minglog type(data) <type 'numpy.float64'>
+minglog data = mnist.validation.images
+minglog type(data) <type 'numpy.ndarray'>
+minglog data.shape (0, 784)
